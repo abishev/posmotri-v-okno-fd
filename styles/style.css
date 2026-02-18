@@ -161,7 +161,7 @@ ol {
 .button {
   border: 1px solid #fff;
   color: #fff;
-
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
@@ -229,7 +229,7 @@ ol {
   opacity: 0;
 }
 
-.search-form__label:hover .search-form__label-text {
+.search-form__label:hover {
   text-decoration: underline;
 }
 
