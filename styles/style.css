@@ -19,6 +19,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  line-height: 1.2; /*Добавил, чтобы наследовался*/
 }
 
 h1,
@@ -229,7 +230,8 @@ ol {
   opacity: 0;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
+  /*Добавил подчеркивание*/
   text-decoration: underline;
 }
 
@@ -261,12 +263,7 @@ ol {
 }
 
 .content__accent {
-  color: #545050;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  text-transform: inherit;
+  color: #545050; /*Удалил дублирование кода, так как он насследуется от title*/
 }
 
 .content__card-link {
